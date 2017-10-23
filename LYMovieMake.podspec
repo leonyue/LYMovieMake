@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author             = { "leonyue" => "4940748@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/leonyue/LYMovieMake.git", :tag => "#{s.version}" }
-  s.source_files  = "LYMovieMake", "LYMovieMake/*"
+  s.source_files  = "LYMovieMake", "LYMovieMake/**/*"
   s.requires_arc = true
 
 end

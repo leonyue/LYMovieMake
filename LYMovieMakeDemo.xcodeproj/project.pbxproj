@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B16F77E1F9DC14E00CAD663 /* LYVideoFrameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7181F9DC0E900CAD663 /* LYVideoFrameGenerator.m */; };
+		1B16F77F1F9DC14E00CAD663 /* LYMovieMakeGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F71A1F9DC0E900CAD663 /* LYMovieMakeGlobal.m */; };
+		1B16F7801F9DC14E00CAD663 /* AVAsset+VideoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F71D1F9DC0E900CAD663 /* AVAsset+VideoSize.m */; };
+		1B16F7811F9DC14E00CAD663 /* CIFilter+FHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F71F1F9DC0E900CAD663 /* CIFilter+FHAdditions.m */; };
+		1B16F7821F9DC14E00CAD663 /* NSString+MovieTimeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7211F9DC0E900CAD663 /* NSString+MovieTimeSupport.m */; };
+		1B16F7831F9DC14E00CAD663 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7231F9DC0E900CAD663 /* UIImage+Resize.m */; };
+		1B16F7841F9DC14E00CAD663 /* UIImageView+VideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7251F9DC0E900CAD663 /* UIImageView+VideoFrame.m */; };
+		1B16F7851F9DC14E00CAD663 /* LYVideoEditOpenGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7291F9DC0E900CAD663 /* LYVideoEditOpenGLRenderer.m */; };
+		1B16F7861F9DC14E00CAD663 /* LYVideoEditCompositionInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F72B1F9DC0E900CAD663 /* LYVideoEditCompositionInstruction.m */; };
+		1B16F7871F9DC14E00CAD663 /* LYVideoEditVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F72D1F9DC0E900CAD663 /* LYVideoEditVideoCompositor.m */; };
+		1B16F7881F9DC14E00CAD663 /* LYMovieConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7301F9DC0E900CAD663 /* LYMovieConstants.m */; };
+		1B16F7891F9DC14E00CAD663 /* LYMovieFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7321F9DC0E900CAD663 /* LYMovieFilter.m */; };
+		1B16F78A1F9DC14E00CAD663 /* LYMovieFilterStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7341F9DC0E900CAD663 /* LYMovieFilterStack.m */; };
+		1B16F78B1F9DC14E00CAD663 /* LYMovieMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7361F9DC0E900CAD663 /* LYMovieMake.m */; };
+		1B16F78C1F9DC14E00CAD663 /* LYMovieSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7391F9DC0E900CAD663 /* LYMovieSlice.m */; };
+		1B16F78D1F9DC14E00CAD663 /* LYMovieSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F73B1F9DC0E900CAD663 /* LYMovieSound.m */; };
+		1B16F78E1F9DC14E00CAD663 /* LYMovieTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F73D1F9DC0E900CAD663 /* LYMovieTransitionFilter.m */; };
+		1B16F78F1F9DC14E00CAD663 /* LYMovieTransitionFilterStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F73F1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.m */; };
+		1B16F7901F9DC14E00CAD663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7421F9DC13000CAD663 /* AppDelegate.m */; };
+		1B16F7911F9DC14E00CAD663 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F74A1F9DC13000CAD663 /* ViewController.m */; };
+		1B16F7971F9DC14E00CAD663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7561F9DC13000CAD663 /* main.m */; };
+		1B16F7991F9DC14E00CAD663 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F75B1F9DC13000CAD663 /* demo.mp4 */; };
+		1B16F7A91F9DC15700CAD663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7431F9DC13000CAD663 /* Assets.xcassets */; };
+		1B16F7AA1F9DC15C00CAD663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7441F9DC13000CAD663 /* LaunchScreen.storyboard */; };
+		1B16F7AB1F9DC15F00CAD663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7461F9DC13000CAD663 /* Main.storyboard */; };
+		1B16F7AC1F9DC16500CAD663 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7551F9DC13000CAD663 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B16F7181F9DC0E900CAD663 /* LYVideoFrameGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYVideoFrameGenerator.m; sourceTree = "<group>"; };
+		1B16F7191F9DC0E900CAD663 /* LYMovieMakeGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieMakeGlobal.h; sourceTree = "<group>"; };
+		1B16F71A1F9DC0E900CAD663 /* LYMovieMakeGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieMakeGlobal.m; sourceTree = "<group>"; };
+		1B16F71C1F9DC0E900CAD663 /* AVAsset+VideoSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVAsset+VideoSize.h"; sourceTree = "<group>"; };
+		1B16F71D1F9DC0E900CAD663 /* AVAsset+VideoSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVAsset+VideoSize.m"; sourceTree = "<group>"; };
+		1B16F71E1F9DC0E900CAD663 /* CIFilter+FHAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIFilter+FHAdditions.h"; sourceTree = "<group>"; };
+		1B16F71F1F9DC0E900CAD663 /* CIFilter+FHAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+FHAdditions.m"; sourceTree = "<group>"; };
+		1B16F7201F9DC0E900CAD663 /* NSString+MovieTimeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MovieTimeSupport.h"; sourceTree = "<group>"; };
+		1B16F7211F9DC0E900CAD663 /* NSString+MovieTimeSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MovieTimeSupport.m"; sourceTree = "<group>"; };
+		1B16F7221F9DC0E900CAD663 /* UIImage+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		1B16F7231F9DC0E900CAD663 /* UIImage+Resize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		1B16F7241F9DC0E900CAD663 /* UIImageView+VideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+VideoFrame.h"; sourceTree = "<group>"; };
+		1B16F7251F9DC0E900CAD663 /* UIImageView+VideoFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+VideoFrame.m"; sourceTree = "<group>"; };
+		1B16F7281F9DC0E900CAD663 /* LYVideoEditOpenGLRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoEditOpenGLRenderer.h; sourceTree = "<group>"; };
+		1B16F7291F9DC0E900CAD663 /* LYVideoEditOpenGLRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYVideoEditOpenGLRenderer.m; sourceTree = "<group>"; };
+		1B16F72A1F9DC0E900CAD663 /* LYVideoEditCompositionInstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoEditCompositionInstruction.h; sourceTree = "<group>"; };
+		1B16F72B1F9DC0E900CAD663 /* LYVideoEditCompositionInstruction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYVideoEditCompositionInstruction.m; sourceTree = "<group>"; };
+		1B16F72C1F9DC0E900CAD663 /* LYVideoEditVideoCompositor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoEditVideoCompositor.h; sourceTree = "<group>"; };
+		1B16F72D1F9DC0E900CAD663 /* LYVideoEditVideoCompositor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYVideoEditVideoCompositor.m; sourceTree = "<group>"; };
+		1B16F72F1F9DC0E900CAD663 /* LYMovieConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieConstants.h; sourceTree = "<group>"; };
+		1B16F7301F9DC0E900CAD663 /* LYMovieConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieConstants.m; sourceTree = "<group>"; };
+		1B16F7311F9DC0E900CAD663 /* LYMovieFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieFilter.h; sourceTree = "<group>"; };
+		1B16F7321F9DC0E900CAD663 /* LYMovieFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieFilter.m; sourceTree = "<group>"; };
+		1B16F7331F9DC0E900CAD663 /* LYMovieFilterStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieFilterStack.h; sourceTree = "<group>"; };
+		1B16F7341F9DC0E900CAD663 /* LYMovieFilterStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieFilterStack.m; sourceTree = "<group>"; };
+		1B16F7351F9DC0E900CAD663 /* LYMovieMake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieMake.h; sourceTree = "<group>"; };
+		1B16F7361F9DC0E900CAD663 /* LYMovieMake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieMake.m; sourceTree = "<group>"; };
+		1B16F7371F9DC0E900CAD663 /* LYMovieOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieOverlay.h; sourceTree = "<group>"; };
+		1B16F7381F9DC0E900CAD663 /* LYMovieSlice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieSlice.h; sourceTree = "<group>"; };
+		1B16F7391F9DC0E900CAD663 /* LYMovieSlice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieSlice.m; sourceTree = "<group>"; };
+		1B16F73A1F9DC0E900CAD663 /* LYMovieSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieSound.h; sourceTree = "<group>"; };
+		1B16F73B1F9DC0E900CAD663 /* LYMovieSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieSound.m; sourceTree = "<group>"; };
+		1B16F73C1F9DC0E900CAD663 /* LYMovieTransitionFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieTransitionFilter.h; sourceTree = "<group>"; };
+		1B16F73D1F9DC0E900CAD663 /* LYMovieTransitionFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieTransitionFilter.m; sourceTree = "<group>"; };
+		1B16F73E1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieTransitionFilterStack.h; sourceTree = "<group>"; };
+		1B16F73F1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieTransitionFilterStack.m; sourceTree = "<group>"; };
+		1B16F7411F9DC13000CAD663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B16F7421F9DC13000CAD663 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B16F7431F9DC13000CAD663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B16F7451F9DC13000CAD663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B16F7471F9DC13000CAD663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B16F7491F9DC13000CAD663 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B16F74A1F9DC13000CAD663 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B16F7551F9DC13000CAD663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B16F7561F9DC13000CAD663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B16F75B1F9DC13000CAD663 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		1B16F7B01F9DCBBE00CAD663 /* LYVideoFrameGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoFrameGenerator.h; sourceTree = "<group>"; };
+		1B4FDB361F99A42B0069F2A9 /* LYMovieMakeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYMovieMakeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B4FDB331F99A42B0069F2A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B16F7151F9DC0E900CAD663 /* LYMovieMake */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F7161F9DC0E900CAD663 /* Models */,
+				1B16F71B1F9DC0E900CAD663 /* MovieCategorys */,
+				1B16F7261F9DC0E900CAD663 /* MovieCompositors */,
+				1B16F72E1F9DC0E900CAD663 /* MovieModels */,
+			);
+			path = LYMovieMake;
+			sourceTree = "<group>";
+		};
+		1B16F7161F9DC0E900CAD663 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F7B01F9DCBBE00CAD663 /* LYVideoFrameGenerator.h */,
+				1B16F7181F9DC0E900CAD663 /* LYVideoFrameGenerator.m */,
+				1B16F7191F9DC0E900CAD663 /* LYMovieMakeGlobal.h */,
+				1B16F71A1F9DC0E900CAD663 /* LYMovieMakeGlobal.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B16F71B1F9DC0E900CAD663 /* MovieCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F71C1F9DC0E900CAD663 /* AVAsset+VideoSize.h */,
+				1B16F71D1F9DC0E900CAD663 /* AVAsset+VideoSize.m */,
+				1B16F71E1F9DC0E900CAD663 /* CIFilter+FHAdditions.h */,
+				1B16F71F1F9DC0E900CAD663 /* CIFilter+FHAdditions.m */,
+				1B16F7201F9DC0E900CAD663 /* NSString+MovieTimeSupport.h */,
+				1B16F7211F9DC0E900CAD663 /* NSString+MovieTimeSupport.m */,
+				1B16F7221F9DC0E900CAD663 /* UIImage+Resize.h */,
+				1B16F7231F9DC0E900CAD663 /* UIImage+Resize.m */,
+				1B16F7241F9DC0E900CAD663 /* UIImageView+VideoFrame.h */,
+				1B16F7251F9DC0E900CAD663 /* UIImageView+VideoFrame.m */,
+			);
+			path = MovieCategorys;
+			sourceTree = "<group>";
+		};
+		1B16F7261F9DC0E900CAD663 /* MovieCompositors */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F7271F9DC0E900CAD663 /* OpenGLRender */,
+				1B16F72A1F9DC0E900CAD663 /* LYVideoEditCompositionInstruction.h */,
+				1B16F72B1F9DC0E900CAD663 /* LYVideoEditCompositionInstruction.m */,
+				1B16F72C1F9DC0E900CAD663 /* LYVideoEditVideoCompositor.h */,
+				1B16F72D1F9DC0E900CAD663 /* LYVideoEditVideoCompositor.m */,
+			);
+			path = MovieCompositors;
+			sourceTree = "<group>";
+		};
+		1B16F7271F9DC0E900CAD663 /* OpenGLRender */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F7281F9DC0E900CAD663 /* LYVideoEditOpenGLRenderer.h */,
+				1B16F7291F9DC0E900CAD663 /* LYVideoEditOpenGLRenderer.m */,
+			);
+			path = OpenGLRender;
+			sourceTree = "<group>";
+		};
+		1B16F72E1F9DC0E900CAD663 /* MovieModels */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F72F1F9DC0E900CAD663 /* LYMovieConstants.h */,
+				1B16F7301F9DC0E900CAD663 /* LYMovieConstants.m */,
+				1B16F7311F9DC0E900CAD663 /* LYMovieFilter.h */,
+				1B16F7321F9DC0E900CAD663 /* LYMovieFilter.m */,
+				1B16F7331F9DC0E900CAD663 /* LYMovieFilterStack.h */,
+				1B16F7341F9DC0E900CAD663 /* LYMovieFilterStack.m */,
+				1B16F7351F9DC0E900CAD663 /* LYMovieMake.h */,
+				1B16F7361F9DC0E900CAD663 /* LYMovieMake.m */,
+				1B16F7371F9DC0E900CAD663 /* LYMovieOverlay.h */,
+				1B16F7381F9DC0E900CAD663 /* LYMovieSlice.h */,
+				1B16F7391F9DC0E900CAD663 /* LYMovieSlice.m */,
+				1B16F73A1F9DC0E900CAD663 /* LYMovieSound.h */,
+				1B16F73B1F9DC0E900CAD663 /* LYMovieSound.m */,
+				1B16F73C1F9DC0E900CAD663 /* LYMovieTransitionFilter.h */,
+				1B16F73D1F9DC0E900CAD663 /* LYMovieTransitionFilter.m */,
+				1B16F73E1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.h */,
+				1B16F73F1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.m */,
+			);
+			path = MovieModels;
+			sourceTree = "<group>";
+		};
+		1B16F7401F9DC13000CAD663 /* LYMovieMakeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F7411F9DC13000CAD663 /* AppDelegate.h */,
+				1B16F7421F9DC13000CAD663 /* AppDelegate.m */,
+				1B16F7491F9DC13000CAD663 /* ViewController.h */,
+				1B16F74A1F9DC13000CAD663 /* ViewController.m */,
+				1B16F75A1F9DC13000CAD663 /* Resources */,
+				1B16F7441F9DC13000CAD663 /* LaunchScreen.storyboard */,
+				1B16F7461F9DC13000CAD663 /* Main.storyboard */,
+				1B16F7431F9DC13000CAD663 /* Assets.xcassets */,
+				1B16F7551F9DC13000CAD663 /* Info.plist */,
+				1B16F7561F9DC13000CAD663 /* main.m */,
+			);
+			path = LYMovieMakeDemo;
+			sourceTree = "<group>";
+		};
+		1B16F75A1F9DC13000CAD663 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F75B1F9DC13000CAD663 /* demo.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B4FDB2D1F99A42A0069F2A9 = {
+			isa = PBXGroup;
+			children = (
+				1B16F7151F9DC0E900CAD663 /* LYMovieMake */,
+				1B16F7401F9DC13000CAD663 /* LYMovieMakeDemo */,
+				1B4FDB371F99A42B0069F2A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B4FDB371F99A42B0069F2A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B4FDB361F99A42B0069F2A9 /* LYMovieMakeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B4FDB351F99A42B0069F2A9 /* LYMovieMakeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B4FDB4C1F99A42C0069F2A9 /* Build configuration list for PBXNativeTarget "LYMovieMakeDemo" */;
+			buildPhases = (
+				1B4FDB321F99A42B0069F2A9 /* Sources */,
+				1B4FDB331F99A42B0069F2A9 /* Frameworks */,
+				1B4FDB341F99A42B0069F2A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYMovieMakeDemo;
+			productName = LYMovieMake;
+			productReference = 1B4FDB361F99A42B0069F2A9 /* LYMovieMakeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B4FDB2E1F99A42B0069F2A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = dj.yue;
+				TargetAttributes = {
+					1B4FDB351F99A42B0069F2A9 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 1B4FDB311F99A42B0069F2A9 /* Build configuration list for PBXProject "LYMovieMakeDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B4FDB2D1F99A42A0069F2A9;
+			productRefGroup = 1B4FDB371F99A42B0069F2A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B4FDB351F99A42B0069F2A9 /* LYMovieMakeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B4FDB341F99A42B0069F2A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B16F7AA1F9DC15C00CAD663 /* LaunchScreen.storyboard in Resources */,
+				1B16F7A91F9DC15700CAD663 /* Assets.xcassets in Resources */,
+				1B16F7991F9DC14E00CAD663 /* demo.mp4 in Resources */,
+				1B16F7AC1F9DC16500CAD663 /* Info.plist in Resources */,
+				1B16F7AB1F9DC15F00CAD663 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B4FDB321F99A42B0069F2A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B16F7971F9DC14E00CAD663 /* main.m in Sources */,
+				1B16F7901F9DC14E00CAD663 /* AppDelegate.m in Sources */,
+				1B16F78D1F9DC14E00CAD663 /* LYMovieSound.m in Sources */,
+				1B16F78C1F9DC14E00CAD663 /* LYMovieSlice.m in Sources */,
+				1B16F78E1F9DC14E00CAD663 /* LYMovieTransitionFilter.m in Sources */,
+				1B16F7881F9DC14E00CAD663 /* LYMovieConstants.m in Sources */,
+				1B16F7821F9DC14E00CAD663 /* NSString+MovieTimeSupport.m in Sources */,
+				1B16F78A1F9DC14E00CAD663 /* LYMovieFilterStack.m in Sources */,
+				1B16F7891F9DC14E00CAD663 /* LYMovieFilter.m in Sources */,
+				1B16F7801F9DC14E00CAD663 /* AVAsset+VideoSize.m in Sources */,
+				1B16F77F1F9DC14E00CAD663 /* LYMovieMakeGlobal.m in Sources */,
+				1B16F78B1F9DC14E00CAD663 /* LYMovieMake.m in Sources */,
+				1B16F7841F9DC14E00CAD663 /* UIImageView+VideoFrame.m in Sources */,
+				1B16F77E1F9DC14E00CAD663 /* LYVideoFrameGenerator.m in Sources */,
+				1B16F7861F9DC14E00CAD663 /* LYVideoEditCompositionInstruction.m in Sources */,
+				1B16F7911F9DC14E00CAD663 /* ViewController.m in Sources */,
+				1B16F7851F9DC14E00CAD663 /* LYVideoEditOpenGLRenderer.m in Sources */,
+				1B16F78F1F9DC14E00CAD663 /* LYMovieTransitionFilterStack.m in Sources */,
+				1B16F7811F9DC14E00CAD663 /* CIFilter+FHAdditions.m in Sources */,
+				1B16F7871F9DC14E00CAD663 /* LYVideoEditVideoCompositor.m in Sources */,
+				1B16F7831F9DC14E00CAD663 /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B16F7441F9DC13000CAD663 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B16F7451F9DC13000CAD663 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1B16F7461F9DC13000CAD663 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B16F7471F9DC13000CAD663 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B4FDB4A1F99A42C0069F2A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B4FDB4B1F99A42C0069F2A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B4FDB4D1F99A42C0069F2A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9P52E65L5;
+				INFOPLIST_FILE = "$(SRCROOT)/LYMovieMakeDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leon.LYMovieMake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B4FDB4E1F99A42C0069F2A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9P52E65L5;
+				INFOPLIST_FILE = "$(SRCROOT)/LYMovieMakeDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leon.LYMovieMake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B4FDB311F99A42B0069F2A9 /* Build configuration list for PBXProject "LYMovieMakeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B4FDB4A1F99A42C0069F2A9 /* Debug */,
+				1B4FDB4B1F99A42C0069F2A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B4FDB4C1F99A42C0069F2A9 /* Build configuration list for PBXNativeTarget "LYMovieMakeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B4FDB4D1F99A42C0069F2A9 /* Debug */,
+				1B4FDB4E1F99A42C0069F2A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B4FDB2E1F99A42B0069F2A9 /* Project object */;
+}

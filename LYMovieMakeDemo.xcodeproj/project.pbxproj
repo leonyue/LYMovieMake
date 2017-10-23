@@ -33,6 +33,9 @@
 		1B16F7AA1F9DC15C00CAD663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7441F9DC13000CAD663 /* LaunchScreen.storyboard */; };
 		1B16F7AB1F9DC15F00CAD663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7461F9DC13000CAD663 /* Main.storyboard */; };
 		1B16F7AC1F9DC16500CAD663 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F7551F9DC13000CAD663 /* Info.plist */; };
+		1B16F7B71F9DD8F600CAD663 /* LYMovieGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7B41F9DD8C600CAD663 /* LYMovieGIF.m */; };
+		1B16F7B81F9DD8F600CAD663 /* LYMovieSubTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7B11F9DD8C600CAD663 /* LYMovieSubTitle.m */; };
+		1B16F7B91F9DD8F600CAD663 /* LYMovieWaterPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F7B21F9DD8C600CAD663 /* LYMovieWaterPrint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +86,12 @@
 		1B16F7561F9DC13000CAD663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B16F75B1F9DC13000CAD663 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		1B16F7B01F9DCBBE00CAD663 /* LYVideoFrameGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoFrameGenerator.h; sourceTree = "<group>"; };
+		1B16F7B11F9DD8C600CAD663 /* LYMovieSubTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieSubTitle.m; sourceTree = "<group>"; };
+		1B16F7B21F9DD8C600CAD663 /* LYMovieWaterPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieWaterPrint.m; sourceTree = "<group>"; };
+		1B16F7B31F9DD8C600CAD663 /* LYMovieWaterPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieWaterPrint.h; sourceTree = "<group>"; };
+		1B16F7B41F9DD8C600CAD663 /* LYMovieGIF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMovieGIF.m; sourceTree = "<group>"; };
+		1B16F7B51F9DD8C600CAD663 /* LYMovieGIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieGIF.h; sourceTree = "<group>"; };
+		1B16F7B61F9DD8C600CAD663 /* LYMovieSubTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMovieSubTitle.h; sourceTree = "<group>"; };
 		1B4FDB361F99A42B0069F2A9 /* LYMovieMakeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYMovieMakeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +186,12 @@
 				1B16F73D1F9DC0E900CAD663 /* LYMovieTransitionFilter.m */,
 				1B16F73E1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.h */,
 				1B16F73F1F9DC0E900CAD663 /* LYMovieTransitionFilterStack.m */,
+				1B16F7B51F9DD8C600CAD663 /* LYMovieGIF.h */,
+				1B16F7B41F9DD8C600CAD663 /* LYMovieGIF.m */,
+				1B16F7B61F9DD8C600CAD663 /* LYMovieSubTitle.h */,
+				1B16F7B11F9DD8C600CAD663 /* LYMovieSubTitle.m */,
+				1B16F7B31F9DD8C600CAD663 /* LYMovieWaterPrint.h */,
+				1B16F7B21F9DD8C600CAD663 /* LYMovieWaterPrint.m */,
 			);
 			path = MovieModels;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 				1B16F7901F9DC14E00CAD663 /* AppDelegate.m in Sources */,
 				1B16F78D1F9DC14E00CAD663 /* LYMovieSound.m in Sources */,
 				1B16F78C1F9DC14E00CAD663 /* LYMovieSlice.m in Sources */,
+				1B16F7B91F9DD8F600CAD663 /* LYMovieWaterPrint.m in Sources */,
 				1B16F78E1F9DC14E00CAD663 /* LYMovieTransitionFilter.m in Sources */,
 				1B16F7881F9DC14E00CAD663 /* LYMovieConstants.m in Sources */,
 				1B16F7821F9DC14E00CAD663 /* NSString+MovieTimeSupport.m in Sources */,
@@ -308,9 +324,11 @@
 				1B16F77F1F9DC14E00CAD663 /* LYMovieMakeGlobal.m in Sources */,
 				1B16F78B1F9DC14E00CAD663 /* LYMovieMake.m in Sources */,
 				1B16F7841F9DC14E00CAD663 /* UIImageView+VideoFrame.m in Sources */,
+				1B16F7B71F9DD8F600CAD663 /* LYMovieGIF.m in Sources */,
 				1B16F77E1F9DC14E00CAD663 /* LYVideoFrameGenerator.m in Sources */,
 				1B16F7861F9DC14E00CAD663 /* LYVideoEditCompositionInstruction.m in Sources */,
 				1B16F7911F9DC14E00CAD663 /* ViewController.m in Sources */,
+				1B16F7B81F9DD8F600CAD663 /* LYMovieSubTitle.m in Sources */,
 				1B16F7851F9DC14E00CAD663 /* LYVideoEditOpenGLRenderer.m in Sources */,
 				1B16F78F1F9DC14E00CAD663 /* LYMovieTransitionFilterStack.m in Sources */,
 				1B16F7811F9DC14E00CAD663 /* CIFilter+FHAdditions.m in Sources */,

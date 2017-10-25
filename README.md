@@ -1,7 +1,7 @@
 # LYMovieMake
 
 ## CocoaPods
-pod 'LYMovieMake', '~> 0.0.1'
+pod 'LYMovieMake', '~> 0.0.2'
 
 ## Demo codes for transition,filter,video join,
 ```

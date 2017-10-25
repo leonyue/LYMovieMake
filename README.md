@@ -1,5 +1,27 @@
 # LYMovieMake
 
+## Brief
+
+supports rate,  clip from start, clip to end, transition, video frame preview, video cut,music,overlay,sound adjustment,filter and something else
+
+transition:
+
+supports:NA,Swipe,Dissolve
+
+supports transition time setting
+
+filter:
+
+supports:NA,VignetteEffect,PhotoEffectFade,PhotoEffectChrome,PhotoEffectProcess,PhotoEffectTransfer,PhotoEffectInstant,SepiaTone,FalseColor,PhotoEffectMono,PhotoEffectTonal,PhotoEffectNoir
+
+overlay:
+
+supports:gif,waterprint,subtitle
+
+support overlay time range set
+
+
+
 ## CocoaPods
 pod 'LYMovieMake', '~> 0.0.3'
 

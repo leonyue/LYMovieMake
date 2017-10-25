@@ -1,5 +1,7 @@
 PODS:
-  - LYMovieMake (0.0.3a)
+  - LYMovieMake (0.0.3):
+    - LYMovieMake/classes (= 0.0.3)
+  - LYMovieMake/classes (0.0.3)
 
 DEPENDENCIES:
   - LYMovieMake (from `./LYMovieMake.podspec`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :podspec: ./LYMovieMake.podspec
 
 SPEC CHECKSUMS:
-  LYMovieMake: 51a7b58437842e8b241af96cccabd42e74384f9f
+  LYMovieMake: 81b1b7ae189c2b8c0111f999575eb3bf10e9031a
 
 PODFILE CHECKSUM: 121aeaf3f81d648039df877e34b945d7e7c98440
 

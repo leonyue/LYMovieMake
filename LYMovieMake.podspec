@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "LYMovieMake"
-  s.version      = "0.0.3a"
+  s.version      = "0.0.3"
   s.summary      = "An iOS Video Editor Tool"
   s.description  = "An iOS Video Editor Tool Using native library"
   s.homepage     = "https://github.com/leonyue/LYMovieMake"
@@ -16,5 +16,11 @@ Pod::Spec.new do |s|
   s.author             = { "leonyue" => "4940748@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/leonyue/LYMovieMake.git", :tag => "#{s.version}" }
-  s.source_files  = "LYMovieMake/**/*"
+  s.source_files  = "LYMovieMake/*"
+  s.requires_arc = true
+
+  s.subspec 'classes' do |c|
+      c.source_files = "LYMovieMake/**/*"
+  end
+
 end

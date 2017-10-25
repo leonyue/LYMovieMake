@@ -8,10 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import <LYMovieMake/LYMovieMake.h>
-#import <LYMovieMake/LYMovieSlice.h>
-#import <LYMovieMake/LYMovieFilterStack.h>
-#import <LYMovieMake/LYMovieTransitionFilterStack.h>
+#import <LYMovieMake/LYMovieMakeLib.h>
 @interface ViewController ()
 
 @property (nonatomic, strong) LYMovieMake *make;
